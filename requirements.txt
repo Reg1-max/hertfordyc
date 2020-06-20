@@ -54,10 +54,6 @@ jmespath==0.9.5
 jrnl==2.3
 keyring==19.3.0
 Kivy==1.11.1
-kivy-deps.gstreamer==0.1.17
-kivy-deps.sdl2==0.1.22
-Kivy-Garden==0.1.4
-kivy-garden.graph==0.4.dev0
 kiwisolver==1.1.0
 l18n==2018.5
 lazy-object-proxy==1.4.3
