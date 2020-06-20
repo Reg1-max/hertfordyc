@@ -1,4 +1,6 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar menus_tags %}
+
+{% get_menu "main" as navigation %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -45,5 +47,9 @@
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
+
+        {% for item in navigation.menu_items.all %}
+            <a href="{{ item.link }}" {% if item.open_in_new_tab %} target="_blank"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
     </body>
 </html>
